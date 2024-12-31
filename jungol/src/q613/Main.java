@@ -3,9 +3,9 @@ package q613;
 import java.util.Scanner;
 
 public class Main {
-	String name;
-	String school;
-	int grade;
+	private String name;
+	private String school;
+	private int grade;
 
 	public static void main(String[] args) {
 

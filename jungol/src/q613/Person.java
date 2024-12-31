@@ -1,7 +1,7 @@
 package q613;
 
 public class Person {
-	String name;
-	String school;
-	int grade;
+	private String name;
+	private String school;
+	private int grade;
 }
