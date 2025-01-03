@@ -1,19 +1,29 @@
 package q615;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Person[] p = { new Person(sc.next(), sc.nextInt(), sc.nextInt()),
-				new Person(sc.next(),sc.nextInt(), sc.nextInt()) };
+		ArrayList<Person> ps = new ArrayList<>();
+		int avgKor=0;
+		int avgEng=0;
+		int count=2;
+//				new Person(sc.next(),sc.nextInt(), sc.nextInt()) };
 
-		for (int i = 0; i < 2; i++) {
-			p[i].print();
+		for (int i = 0; i < count; i++) {
+			ps.add(new Person(sc.next(), sc.nextInt(), sc.nextInt()));
 		}
-		System.out.print("avg "+(p[0].korean+p[1].korean)/2+" "+(p[0].english+p[1].english)/2);
-
+		for (Person p : ps) {
+			p.print();
+			avgKor+= p.korean;
+			avgEng+= p.english;
+		}
+		avgKor=avgKor/count;
+		avgEng=avgEng/count;
+		System.out.print("avg " + avgKor + " " + avgEng);
 	}
 
 }
