@@ -18,8 +18,8 @@ public class Main {
 		}
 		for (Person p : ps) {
 			p.print();
-			avgKor+= p.korean;
-			avgEng+= p.english;
+			avgKor+= p.getKor();
+			avgEng+= p.getEng();
 		}
 		avgKor=avgKor/count;
 		avgEng=avgEng/count;
