@@ -20,7 +20,7 @@ public class Main {
 				if (num[0]<num[1]) {
 					for (int j=1; j<=9; j++) {
 						for (int i=num[0];i<=num[1];i++) {
-							System.out.printf("%d * %d = %2s   ", i, j, Integer.toString(i*j));
+							System.out.printf("%d * %d = %2d   ", i, j, (i*j));
 						}
 						System.out.println();
 					}
@@ -29,7 +29,7 @@ public class Main {
 				else {
 					for (int j=1; j<=9; j++) {
 						for (int i=num[0];i>=num[1];i--) {
-							System.out.printf("%d * %d = %2s   ", i, j, Integer.toString(i*j));
+							System.out.printf("%d * %d = %2d   ", i, j, (i*j));
 						}
 						System.out.println();
 					}
